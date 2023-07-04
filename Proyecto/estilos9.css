@@ -1,0 +1,250 @@
+*
+{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+	font-family: sans-serif;
+}
+.contenedor
+{
+	width: 100%;
+	min-width: 1200px;
+	font-family: 'Bangers', cursive;
+    font-family: 'Passion One', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+nav
+{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px;
+	background: #7FB3D5;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+.logo
+{
+	width: 120%;
+	color: white;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+.logo img
+{
+	width: 100%;
+	height: auto;
+}
+nav .izq .logo img
+{
+	width: 40px;
+	margin: 5px 0;
+	cursor: pointer;
+}
+nav .der
+{
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	cursor: pointer;
+}
+nav .der i
+{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	margin-left: 8px;
+	cursor: pointer;
+	padding-left: 8px;
+}
+nav .der img
+{
+	width: 35px;
+	height: 35px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	margin-left: 8px;
+	line-height: 45px;
+	cursor: pointer;
+}
+.principal
+{
+	display: flex;
+	margin-top: 60px;
+	background: #EAF2F8;
+}
+.principal .izq
+{
+	width: 15%;
+	height: 92vh;
+	overflow: hidden;
+	overflow-y: scroll;
+	background: #FAFAFA;
+	padding: 20px 6px 5px 10px;
+	position: fixed;
+}
+.principal .izq::-webkit-scrollbar
+{
+	width: 7px;
+}
+.principal .izq::-webkit-scrollbar-thumb
+{
+	border-radius: 20px;
+	background: var(--fondo-gris-b);
+}
+.principal .izq:hover::-webkit-scrollbar-thumb
+{
+	background: var(--borde-gris);
+}
+.principal .izq .img
+{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.principal .izq .img:hover
+{
+	background: var(--fondo-hover);
+}
+.principal .izq .img img
+{
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	margin: 8px 15px 8px 0px;
+}
+.principal .izq hr
+{
+	width: 100%;
+	height: 1px;
+	border: 0;
+	background: var(--borde-gris);
+	margin: 10px 0;
+}
+.principal .izq a
+{
+	text-decoration: none;
+	color: black;
+}
+.principal .izq h2
+{
+	font-size: 18px;
+	color: var(--fuente-gris);
+	margin: 5px 0;
+}
+.principal .izq .editar
+{
+	color: #45abff;
+	font-size: 15px;
+	float: right;
+	position: relative;
+	bottom: 23px;
+	cursor: pointer;
+	opacity: 0;
+}
+.principal .izq:hover .editar
+{
+	opacity: 1;
+}
+.principal .izq .atajos
+{
+	display: flex;
+	align-items: center;
+	transition: 0.2s;
+}
+.principal .izq .atajos img
+{
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	margin: 8px 15px 8px 0;
+}
+.centro
+{
+	width: 100%;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 30px 0px;
+	margin-left: 25%;
+}
+.perfil
+{
+  width: 800px;
+  right: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #D2B4DE, #A3E4D7);
+}
+.perfil-sup
+{
+  text-align: center;
+}
+.perfil-sup img
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.perfil-info
+{
+  margin-top: 20px;
+}
+.perfil-info h3
+{
+  margin-bottom: 10px;
+}
+.perfil-info ul
+{
+  list-style: none;
+  padding: 0;
+}
+.perfil-info ul li
+{
+  margin-bottom: 5px;
+}
+.perfil-info ul li strong
+{
+  margin-right: 5px;
+}
+.perfil-bio
+{
+  margin-top: 20px;
+}
+.perfil-bio h3
+{
+  margin-bottom: 10px;
+}
+@media (max-width: 361px)
+{
+
+    .principal .izq
+    {
+     width: 100px;
+     height: 100px;
+    }
+    .centro .perfil
+    {
+      width: 300px;
+      height: 300px;
+    }
+}
